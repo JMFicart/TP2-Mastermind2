@@ -1,0 +1,16 @@
+.main{
+      display: flex;
+}
+      
+.selection{
+      align-content: flex-start;
+}
+
+.color-selector{
+      align-content: flex-start;
+}
+
+.resultat{
+      align-content: flex-end;
+}
+

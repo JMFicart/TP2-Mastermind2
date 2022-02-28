@@ -1,0 +1,20 @@
+<div id="main">
+      <div>
+            <div id="selection">
+                  <app-selection></app-selection>
+            </div>
+
+            <div id="color-selector">
+                  <app-color-selector></app-color-selector>
+            </div>
+      </div>
+
+      <div>
+            <div id="resultat">
+                  <app-disp-resultat
+                  *ngFor="let color of ecolor; let i=index" 
+                  [color]="color">
+                  </app-disp-resultat>
+            </div>
+      </div>
+</div>
