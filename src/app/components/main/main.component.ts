@@ -8,9 +8,7 @@ import { Color } from 'src/app/models/color.model';
 })
 export class MainComponent implements OnInit {
   combinaison: Color[] = [{c1:'green', c2:'blue', c3:'blue', c4:'red'}]
-  ecolor: Color[] = [{c1:'white', c2:'white', c3:'white', c4:'white'}]
-  ebgcolor: Color[] = [{c1:'white', c2:'white', c3:'white', c4:'white'}]
-  pcolor: Color[] = [{c1:'white', c2:'white', c3:'white', c4:'white'}]
+  pcolor: Color = {c1:'white', c2:'white', c3:'white', c4:'white'}
 
   constructor() { }
 

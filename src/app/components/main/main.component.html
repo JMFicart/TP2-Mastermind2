@@ -1,20 +1,13 @@
 <div id="main">
-      <div>
-            <div id="selection">
-                  <app-selection></app-selection>
-            </div>
-
-            <div id="color-selector">
-                  <app-color-selector></app-color-selector>
-            </div>
+      <div id="color-selector">
+            <app-color-selector (addEssai)="$event"></app-color-selector>
       </div>
 
-      <div>
-            <div id="resultat">
-                  <app-disp-resultat
-                  *ngFor="let color of ecolor; let i=index" 
-                  [color]="color">
-                  </app-disp-resultat>
-            </div>
+      <div id="resultat" >
+            <app-disp-resultat [essaicolor]=pcolor>
+            </app-disp-resultat>
+            <!-- <app-disp-resultat
+            *ngFor="let color of ecolor; let i=index">
+            </app-disp-resultat> -->
       </div>
 </div>

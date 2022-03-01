@@ -7,7 +7,6 @@ import { ColorSelectorComponent } from './components/color-selector/color-select
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { DispResultatComponent } from './components/disp-resultat/disp-resultat.component';
-import { SelectionComponent } from './components/selection/selection.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,7 @@ import { SelectionComponent } from './components/selection/selection.component';
     HeaderComponent,
     MainComponent,
     DispResultatComponent,
-    SelectionComponent,
+
   ],
   imports: [
     BrowserModule,

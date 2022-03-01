@@ -8,11 +8,12 @@ import { Color } from 'src/app/models/color.model';
 })
 export class ColorSelectorComponent implements OnInit {
   couleurpion = ["pink", "green", "blue", "red", "purple", "yellow", "brown"];
-  // pcolor = ["white", "white", "white", "white"];
+  pcolor = ["white", "white", "white", "white"];
   ptrcouleur: number = 0;
   
-  @Output("add")
+  @Output("addEssai")
   addLine= new EventEmitter<Color>()
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -20,12 +21,10 @@ export class ColorSelectorComponent implements OnInit {
 
   validate() {
     this.addLine.emit({
-      c1: 
-        this.pcolor[0],
-        this.pcolor[1],
-        this.pcolor[2],
-        this.pcolor[3]
-      ,
+      c1:  this.pcolor[0],
+      c2:  this.pcolor[1],
+      c3:  this.pcolor[2],
+      c4:  this.pcolor[3]
     });
   }
 

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Color } from 'src/app/models/color.model';
 
 @Component({
   selector: 'app-disp-resultat',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./disp-resultat.component.css']
 })
 export class DispResultatComponent implements OnInit {
+  ecolor: Color[] = [{c1:'white', c2:'white', c3:'white', c4:'white'}]
+  ebgcolor: Color[] = [{c1:'white', c2:'white', c3:'white', c4:'white'}]
 
-  constructor() { }
+  @Input()
+  essaicolor: Color | undefined;
+  
+  constructor() {}
 
   ngOnInit(): void {
   }
-
 }
