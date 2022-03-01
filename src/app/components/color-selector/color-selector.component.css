@@ -13,7 +13,7 @@ td {
 table {
     /* width: 100%; */
     max-width: 270px;
-    height: 190px;
+    height: 187px;
     margin: 0 auto;
     display: block;
     overflow-x: auto;
@@ -43,7 +43,7 @@ tr:last-child td {
 .selection {
     width: 100%;
     max-width: 275px;
-    height: 65px;
+    height: 63px;
     margin: 0 auto;
     display: block;
     overflow-x: auto;

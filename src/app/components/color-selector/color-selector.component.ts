@@ -10,16 +10,17 @@ export class ColorSelectorComponent implements OnInit {
   couleurpion = ["pink", "green", "blue", "red", "purple", "yellow", "brown"];
   pcolor = ["white", "white", "white", "white"];
   ptrcouleur: number = 0;
+  // addLine: EventEmitter<Color>
   
-  @Output("addEssai")
-  addLine= new EventEmitter<Color>()
+  @Output() addLine : EventEmitter<Color>
   
-  constructor() { }
+  constructor() {this.addLine = new EventEmitter<Color>() }
 
   ngOnInit(): void {
   }
 
   validate() {
+    console.log("Validate")
     this.addLine.emit({
       c1:  this.pcolor[0],
       c2:  this.pcolor[1],
