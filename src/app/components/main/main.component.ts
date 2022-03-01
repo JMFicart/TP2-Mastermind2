@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Color } from 'src/app/models/color.model';
 
 @Component({
@@ -16,13 +16,6 @@ export class MainComponent implements OnInit {
   }
 
   displayLine(nline: Color){
-    console.log('displayLine')
-
-    this.pcolor.c1 = nline.c1
-    this.pcolor.c2 = nline.c2
-    this.pcolor.c3 = nline.c3
-    this.pcolor.c4 = nline.c4
-
-    console.log(this.pcolor.c1 + '  ' + this.pcolor.c2 + '  ' + this.pcolor.c3 + '  ' + this.pcolor.c4)
+    this.pcolor= nline
   }
 }

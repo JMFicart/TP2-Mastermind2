@@ -1,11 +1,8 @@
 .main{
       display: flex;
+      flex-direction: row;
 }
       
-.selection{
-      align-content: flex-start;
-}
-
 .color-selector{
       align-content: flex-start;
 }
@@ -14,3 +11,7 @@
       align-content: flex-end;
 }
 
+.container{
+      display: flex;
+      flex-direction: row;
+}

@@ -20,7 +20,6 @@ export class ColorSelectorComponent implements OnInit {
   }
 
   validate() {
-    console.log("Validate")
     this.addLine.emit({
       c1:  this.pcolor[0],
       c2:  this.pcolor[1],

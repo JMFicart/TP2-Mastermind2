@@ -1,11 +1,10 @@
-<div id="main">
-      <div id="color-selector">
+<div class="main">
+      <div class="color-selector">
             <app-color-selector (addLine)="displayLine($event)"></app-color-selector>
       </div>
 
-      <div id="resultat" >
-            <app-disp-resultat [essaicolor]=pcolor>
-            </app-disp-resultat>
+      <div class="resultat" >
+            <app-disp-resultat [essaicolor]=pcolor></app-disp-resultat>
             <!-- <app-disp-resultat
             *ngFor="let color of ecolor; let i=index">
             </app-disp-resultat> -->
