@@ -4,9 +4,6 @@
       </div>
 
       <div class="resultat" >
-            <app-disp-resultat [essaicolor]=pcolor></app-disp-resultat>
-            <!-- <app-disp-resultat
-            *ngFor="let color of ecolor; let i=index">
-            </app-disp-resultat> -->
+            <app-disp-resultat *ngFor="let essai of ecolor;; let i=index" [essaicolor]=essai></app-disp-resultat>
       </div>
 </div>

@@ -26,6 +26,7 @@ export class ColorSelectorComponent implements OnInit {
       c3:  this.pcolor[2],
       c4:  this.pcolor[3]
     });
+    this.reset()
   }
 
   reset() {

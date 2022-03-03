@@ -9,6 +9,8 @@ import { Color } from 'src/app/models/color.model';
 export class MainComponent implements OnInit {
   combinaison: Color[] = [{c1:'green', c2:'blue', c3:'blue', c4:'red'}]
   pcolor: Color = {c1:'white', c2:'white', c3:'white', c4:'white'}
+  ecolor: Color[] = []
+  ebgcolor: Color[] = [{c1:'white', c2:'white', c3:'white', c4:'white'}]
 
   constructor() { }
 
@@ -16,6 +18,6 @@ export class MainComponent implements OnInit {
   }
 
   displayLine(nline: Color){
-    this.pcolor= nline
+    this.ecolor.push(nline)
   }
 }

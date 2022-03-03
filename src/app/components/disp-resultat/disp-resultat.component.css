@@ -4,16 +4,6 @@ td {
     border: 2px solid darkgrey;
 }
 
-table {
-    /* width: 100%; */
-    max-width: 270px;
-    height: 190px;
-    margin: 0 auto;
-    display: block;
-    overflow-x: auto;
-    border-spacing: 0;
-}
-
 tbody {
     white-space: nowrap;
 }
@@ -35,16 +25,8 @@ tr:last-child td {
 }
 
 .resultat {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    max-width: 450px;
-    height: 200px;
-    margin: 0 auto;
-    display: block;
-    overflow-x: auto;
-    border-spacing: 0;
 }
 
 .dot {
@@ -54,4 +36,4 @@ tr:last-child td {
     border-color: black;
     border-style: solid;
     display: inline-block;
-  }
+}
